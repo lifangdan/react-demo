@@ -5,20 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import ComponentHeader from './components/header'
+import ComponentFooter from './components/footer'
+import BodyIndex from './components/bodyIndex'
 
 class Index extends React.Component {
     render() {
         return (
             <div>
-                <ComponentHeader/>
-                <h2>页面主题内容</h2>
+                <ComponentHeader />
+                <BodyIndex />
+                <ComponentFooter />
             </div>
         )
     }
 }
 
 ReactDOM.render(
-    <Index/>,
+    <Index />,
     document.getElementById('root')
 )
 
