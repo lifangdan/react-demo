@@ -1,6 +1,12 @@
 import React from 'react'
 
 export default class BodyIndex extends React.Component {
+    componentWillMount(){
+        console.log("BodyIndex-componentWillMount")
+    }
+    componentDidMount(){
+        console.log("BodyIndex-componentDidMount")
+    }
     render() {
         var userName = 'lifangdan'
         var boolInput = true
