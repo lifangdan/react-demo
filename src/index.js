@@ -8,10 +8,10 @@ import ComponentFooter from './components/footer'
 import BodyIndex from './components/bodyIndex'
 
 class Index extends React.Component {
-    componentWillMount(){
+    componentWillMount() {
         console.log("Index-componentWillMount")
     }
-    componentDidMount(){
+    componentDidMount() {
         console.log("Index-componentDidMount")
     }
     render() {

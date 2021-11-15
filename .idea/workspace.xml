@@ -203,7 +203,7 @@
       <workItem from="1635909784324" duration="6040000" />
       <workItem from="1636420076601" duration="2661000" />
       <workItem from="1636679565431" duration="590000" />
-      <workItem from="1636938530525" duration="2610000" />
+      <workItem from="1636938530525" duration="3006000" />
     </task>
     <task id="LOCAL-00001" summary="添加头部组件">
       <created>1635924449852</created>
@@ -216,10 +216,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11901000" />
+    <option name="totallyTimeSpent" value="12297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="791" y="0" width="1213" height="1118" extended-state="0" />
+    <frame x="791" y="0" width="1213" height="1118" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17757009" />
