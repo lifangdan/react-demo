@@ -18,7 +18,7 @@ class Index extends React.Component {
         return (
             <div>
                 <ComponentHeader />
-                <BodyIndex />
+                <BodyIndex userId="123" userAge="20" />
                 <ComponentFooter />
             </div>
         )

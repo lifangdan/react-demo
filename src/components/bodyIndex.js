@@ -28,7 +28,8 @@ export default class BodyIndex extends React.Component {
         return (
             <div>
                 <h2>页面主体内容</h2>
-                <p>{this.state.userName}</p>
+                <p>{this.state.userName},{this.props.userId},{this.props.userAge}</p>
+    
                 <p>{userName === '' ? '用户还没有登录' : '用户名：' + userName}</p>
                 <p><input type="button" disabled={boolInput} value={userName} /></p>
                 <p>{html}</p>
