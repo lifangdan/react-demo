@@ -10,7 +10,7 @@ export default class BodyIndex extends React.Component {
     }
 
     constructor() {
-        super()//调用基类的左右初始化方法
+        super()//调用基类的所有初始化方法
         this.state = { //初始化赋值
             userName: 'lifangdan',
             age: 20
