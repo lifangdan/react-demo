@@ -4,7 +4,7 @@ export default class ComponentFooter extends React.Component {
     render() {
         return (
             <footer className={footerStyle.footer}>
-                <h1>这里是页脚</h1>
+                <h1>这里是页脚11</h1>
             </footer>
         )
     }
