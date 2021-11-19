@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import './css/style.css'
+import './style/style.css'
 
 import ComponentHeader from './components/header'
 import ComponentFooter from './components/footer'

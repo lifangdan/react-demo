@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDom from 'react-dom'
 import BodyChild from './bodyChild'
 export default class BodyIndex extends React.Component {
     componentWillMount() {
