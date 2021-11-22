@@ -1,34 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
+import 'antd/dist/antd.css'
 import './index.css';
+import './style/style.css'
 import reportWebVitals from './reportWebVitals';
 
-import './style/style.css'
-
-import ComponentHeader from './components/header'
-import ComponentFooter from './components/footer'
-import BodyIndex from './components/bodyIndex'
-
-class Index extends React.Component {
-    componentWillMount() {
-        console.log("Index-componentWillMount")
-    }
-    componentDidMount() {
-        console.log("Index-componentDidMount")
-    }
-    render() {
-        return (
-            <div>
-                <ComponentHeader />
-                <BodyIndex userId="123" userAge="20" />
-                <ComponentFooter />
-            </div>
-        )
-    }
-}
-
 ReactDOM.render(
-    <Index />,
+    <App />,
     document.getElementById('root')
 )
 

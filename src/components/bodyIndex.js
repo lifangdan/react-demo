@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyChild from './bodyChild'
+import { Input } from 'antd';
 export default class BodyIndex extends React.Component {
     componentWillMount() {
         console.log("BodyIndex-componentWillMount")
@@ -40,6 +41,7 @@ export default class BodyIndex extends React.Component {
                 <p>年龄：{this.state.age}</p>
                 <input id="submitBtn" ref="submitBtn" type="button" value="提交" onClick={this.changeValue} />
                 <BodyChild handleChildValueChange={this.handleChange.bind(this)} />
+                <Input/>
             </div>
         )
     }
