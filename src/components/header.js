@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default class ComponentHeader extends React.Component {
     constructor() {
         super()
