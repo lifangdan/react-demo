@@ -5,7 +5,7 @@ import { AppstoreOutlined } from '@ant-design/icons';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-export default class pcHeader extends React.Component {
+export default class PCHeader extends React.Component {
   constructor() {
     super();
     this.state = {
