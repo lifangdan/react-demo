@@ -1,5 +1,5 @@
 import React from 'react';
-import PCIndex from './components/pc_index'
+import PCIndex from './pages/pc/pc_index'
 class App extends React.Component {
   render() {
     return (
