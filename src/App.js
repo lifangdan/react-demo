@@ -7,11 +7,11 @@ class App extends React.Component {
     return (
       <div>
         <MediaQuery query='(min-device-width: 1224px)'>
-          <PCIndex />
-        </MediaQuery>
-        <MediaQuery query='(max-device-width: 1224px)'>
-          <MobileIndex />
-        </MediaQuery>
+					<PCIndex/>
+				</MediaQuery>
+				<MediaQuery query='(max-device-width: 1224px)'>
+					<MobileIndex/>
+				</MediaQuery>
       </div>
     );
   }

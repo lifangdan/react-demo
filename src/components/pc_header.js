@@ -1,10 +1,6 @@
 import React from "react";
-import { Row, Col } from 'antd';
-import { Menu } from 'antd';
+import { Row, Col, Menu } from 'antd';
 import { AppstoreOutlined } from '@ant-design/icons';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-
 export default class PCHeader extends React.Component {
   constructor() {
     super();
