@@ -48,7 +48,6 @@ export default class PCHeader extends React.Component {
             })
         }
     };
-    //弹出框显示隐藏设置
     setModalVisible(value) {
         this.setState({
             modalVisible: value
