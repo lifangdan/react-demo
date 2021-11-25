@@ -37,7 +37,6 @@ export default class PCHeader extends React.Component {
         }
     };
     handleClick(e) {  
-        
         if (e.key === "register") {
             this.setState({
                 current: 'register'
