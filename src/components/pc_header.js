@@ -29,7 +29,7 @@ export default class PCHeader extends React.Component {
     };
 
     componentWillMount() {
-        if (localStorage.userNickName != '') {
+        if (localStorage.userNickName !== '') {
             this.setState({
                 hasLogined: true,
                 userNickName: localStorage.userNickName
