@@ -1,16 +1,16 @@
 .logo {
     align-items: center;
     display: flex;
+}
 
-    img {
-        width: 48px;
-        height: 48px;
-    }
+.logo img {
+    width: 48px;
+    height: 48px;
+}
 
-    span {
-        font-size: 24px;
-        padding-left: 5px;
-    }
+.logo span {
+    font-size: 24px;
+    padding-left: 5px;
 }
 
 .footer {
@@ -21,11 +21,37 @@
     float: right !important;
 }
 
-.ant-menu-horizontal>.ant-menu-item>a,
-.ant-menu-horizontal>.ant-menu-submenu>a {
+.ant-menu-horizontal>.ant-menu-item>a, .ant-menu-horizontal>.ant-menu-submenu>a {
     display: inline-block !important;
 }
 
+.container{
+  padding-top: 10px;
+}
+
+.leftContainer {
+    width: 400px;
+    float: left;
+}
+
+.carousel {
+    width: 400px;
+    float: left;
+}
+
+.ant-card{
+  margin-top: 5px !important;
+}
+
+.ant-card-head-title{
+  text-align: left !important;
+}
+.ant-card-body{
+  text-align: left !important;
+}
+.usercenter {
+    float: right !important;
+}
 
 #container {
     text-align: center !important;
