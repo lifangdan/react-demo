@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { Card } from 'antd';
 
 export default class PCNewsBlock extends React.Component {
@@ -66,8 +66,9 @@ export default class PCNewsBlock extends React.Component {
         const newsList = news.length
             ? news.map((newsItem, index) => (
                 <li key={index}>
-                    
+                    <Link to={`details/${newsItem.uniquekey}`} target="_blank">
                         {newsItem.title}
+                    </Link>
                 </li>
             ))
             : '没有加载到任何新闻';
