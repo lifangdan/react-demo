@@ -46,43 +46,7 @@ export default class PCNewsImageBlock extends React.Component {
                 name: '非洲猫'
             }
         ]
-        const data2 = [
-            {
-                uniquekey: 1,
-                title: '头条新闻',
-                src: '../images/carousel_2.jpg',
-                name: '非洲猫'
-            },
-            {
-                uniquekey: 2,
-                title: '头条新闻',
-                src: '../images/carousel_2.jpg',
-                name: '非洲猫'
-            },
-            {
-                uniquekey: 3,
-                title: '头条新闻',
-                src: '../images/carousel_2.jpg',
-                name: '非洲猫'
-            },
-            {
-                uniquekey: 4,
-                title: '头条新闻',
-                src: '../images/carousel_2.jpg',
-                name: '非洲猫'
-            },
-            {
-                uniquekey: 5,
-                title: '头条新闻',
-                src: '../images/carousel_2.jpg',
-                name: '非洲猫'
-            }
-        ]
-        // if (this.props.type === 'top') {
-        //     this.setState({ news: data1 })
-        // } else if (this.props.type === 'guoji') {
-        //     this.setState({ news: data2 })
-        // }
+
         this.setState({ news: data1 })
     };
     render() {
@@ -100,7 +64,7 @@ export default class PCNewsImageBlock extends React.Component {
         const news = this.state.news
         const newsList = news.length
             ? news.map((newsItem, index) => (
-                <div className="imageblock">
+                <div className="imageblock" key={index}>
                     <div className="custom-image">
                         <img style={styleImage} alt='' src={newsItem.src} />
                     </div>

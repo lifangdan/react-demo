@@ -96,7 +96,7 @@ export default class MobileList extends React.Component {
         this.setState({ news: data1 })
     };
     render() {
-        const { news } = this.state;
+        const news = this.state.news
         const newsList = news.length
             ? news.map((newsItem, index) => (
                 <section key={index} className="m_article list-item special_section clearfix">
