@@ -1,11 +1,10 @@
 import React from 'react';
-import PCHeader from '../../components/pc_header'
-import PCFooter from '../../components/pc_footer'
-import PCNewsImageBlock from './pc_news_image_block'
+import MobileHeader from '../../components/mobile_header'
+import MobileFooter from '../../components/mobile_footer'
 import { Row, Col, BackTop } from 'antd';
 
 
-export default class PCNewsDetails extends React.Component {
+export default class MobileNewsDetails extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -15,10 +14,9 @@ export default class PCNewsDetails extends React.Component {
     render() {
         return (
             <div>
-                <PCHeader />
+                <MobileHeader />
                 <Row>
-                    <Col span={2}></Col>
-                    <Col span={14} className="container">
+                    <Col span={24} className="container">
                         <div className="articleContainer">这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页</div>
                         <div>这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页</div>
                         <div>这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页这里是新闻详情页</div>
@@ -175,12 +173,8 @@ export default class PCNewsDetails extends React.Component {
                         <div>这里是详情页</div>
                         <div>这里是详情页</div>
                     </Col>
-                    <Col span={6}>
-                        <PCNewsImageBlock width='100%' cardTitle="相关新闻" imageWidth="135px" />
-                    </Col>
-                    <Col span={2}></Col>
                 </Row>
-                <PCFooter />
+                <MobileFooter />
                 <BackTop />
             </div>
         )

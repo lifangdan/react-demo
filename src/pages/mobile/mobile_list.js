@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Link } from 'react-router-dom'
 export default class MobileList extends React.Component {
     constructor() {
         super();
@@ -100,7 +100,7 @@ export default class MobileList extends React.Component {
         const newsList = news.length
             ? news.map((newsItem, index) => (
                 <section key={index} className="m_article list-item special_section clearfix">
-                    <div>
+                    <Link to={`details/${newsItem.uniquekey}`}>
                         <div className="m_article_img">
                             <img src={newsItem.src} alt={newsItem.title} />
                         </div>
@@ -115,7 +115,7 @@ export default class MobileList extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </section>
             ))
             : '没有加载到任何新闻';

@@ -2,6 +2,7 @@ import React from 'react';
 import PCIndex from './pages/pc/pc_index'
 import PCNewsDetails from './pages/pc/pc_news_detail';
 import MobileIndex from './pages/mobile/mobile_index'
+import MobileNewsDetails from './pages/mobile/mobile_news_detail'
 import MediaQuery from 'react-responsive';
 import {
     BrowserRouter as Router, Routes, Route,
@@ -17,10 +18,14 @@ class App extends React.Component {
                             <Route path="/details/:uniquekey" element={<PCNewsDetails />}></Route>
                         </Routes>
                     </Router>
-
                 </MediaQuery>
                 <MediaQuery query='(max-device-width: 1224px)'>
-                    <MobileIndex />
+                    <Router>
+                        <Routes>
+                            <Route path="/" element={<MobileIndex />}></Route>
+                            <Route path="/details/:uniquekey" element={<MobileNewsDetails />}></Route>
+                        </Routes>
+                    </Router>
                 </MediaQuery>
             </div>
         );
