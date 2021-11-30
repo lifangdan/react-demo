@@ -134,10 +134,10 @@ export default class PCHeader extends React.Component {
                                         wrapperCol={{ span: 16 }}
                                         labelCol={{ span: 5 }}
                                         onFinish={this.handleSubmit.bind(this)}>
-                                        <FormItem label="账户" name="r_userName">
+                                        <FormItem label="账户" name="r_userName" rules={[{ required: true }]}>
                                             <Input placeholder="请输入您的账户" />
                                         </FormItem>
-                                        <FormItem label="密码" name="r_password">
+                                        <FormItem label="密码" name="r_password" rules={[{ required: true }]}>
                                             <Input type="password" placeholder="请输入您的密码" />
                                         </FormItem>
                                         <Button type="primary" htmlType="submit" >登录</Button>
@@ -149,13 +149,13 @@ export default class PCHeader extends React.Component {
                                         wrapperCol={{ span: 16 }}
                                         labelCol={{ span: 5 }}
                                         onFinish={this.handleSubmit.bind(this)}>
-                                        <FormItem label="账户" name="r_userName">
+                                        <FormItem label="账户" name="r_userName" rules={[{ required: true }]}>
                                             <Input placeholder="请输入您的账户" />
                                         </FormItem>
-                                        <FormItem label="密码" name="r_password">
+                                        <FormItem label="密码" name="r_password" rules={[{ required: true }]}>
                                             <Input type="password" placeholder="请输入您的密码" />
                                         </FormItem>
-                                        <FormItem label="确认密码" name="r_confirmPassword">
+                                        <FormItem label="确认密码" name="r_confirmPassword" rules={[{ required: true }]}>
                                             <Input type="password" placeholder="请再次输入您的密码" />
                                         </FormItem>
                                         <Button type="primary" htmlType="submit" >注册</Button>
