@@ -1,5 +1,4 @@
 import React from "react";
-import axios from 'axios'
 import {
     Row,
     Col,
@@ -10,7 +9,6 @@ import {
     message,
     Form,
     Input,
-    CheckBox,
 } from 'antd';
 import { AppstoreOutlined } from '@ant-design/icons';
 const { TabPane } = Tabs;
@@ -36,7 +34,7 @@ export default class PCHeader extends React.Component {
             })
         }
     };
-    handleClick(e) {  
+    handleClick(e) {
         if (e.key === "register") {
             this.setState({
                 current: 'register'
@@ -75,6 +73,7 @@ export default class PCHeader extends React.Component {
         }
     };
     loginOut() {
+        localStorage.userNickName = '';
         this.setState({ hasLogined: false })
         this.setState({ hasLogined: false })
     }
@@ -131,34 +130,36 @@ export default class PCHeader extends React.Component {
                                 <TabPane tab="登录" key="1">
                                     <Form
                                         layout="horizontal"
-                                        wrapperCol={{ span: 16 }}
                                         labelCol={{ span: 5 }}
                                         onFinish={this.handleSubmit.bind(this)}>
-                                        <FormItem label="账户" name="r_userName" rules={[{ required: true }]}>
+                                        <FormItem label="账户" name="r_userName" rules={[{ required: true, message: '请输入您的账户' }]}>
                                             <Input placeholder="请输入您的账户" />
                                         </FormItem>
-                                        <FormItem label="密码" name="r_password" rules={[{ required: true }]}>
+                                        <FormItem label="密码" name="r_password" rules={[{ required: true, message: '请输入您的密码' }]}>
                                             <Input type="password" placeholder="请输入您的密码" />
                                         </FormItem>
-                                        <Button type="primary" htmlType="submit" >登录</Button>
+                                        <FormItem wrapperCol={{ span: 5, offset: 5 }}>
+                                            <Button type="primary" htmlType="submit" >登录</Button>
+                                        </FormItem>
                                     </Form>
                                 </TabPane>
                                 <TabPane tab="注册" key="2">
                                     <Form
                                         layout="horizontal"
-                                        wrapperCol={{ span: 16 }}
                                         labelCol={{ span: 5 }}
                                         onFinish={this.handleSubmit.bind(this)}>
-                                        <FormItem label="账户" name="r_userName" rules={[{ required: true }]}>
+                                        <FormItem label="账户" name="r_userName" rules={[{ required: true, message: '请输入您的账户' }]}>
                                             <Input placeholder="请输入您的账户" />
                                         </FormItem>
-                                        <FormItem label="密码" name="r_password" rules={[{ required: true }]}>
+                                        <FormItem label="密码" name="r_password" rules={[{ required: true, message: '请输入您的密码' }]}>
                                             <Input type="password" placeholder="请输入您的密码" />
                                         </FormItem>
-                                        <FormItem label="确认密码" name="r_confirmPassword" rules={[{ required: true }]}>
+                                        <FormItem label="确认密码" name="r_confirmPassword" rules={[{ required: true, message: '请再次输入您的密码' }]}>
                                             <Input type="password" placeholder="请再次输入您的密码" />
                                         </FormItem>
-                                        <Button type="primary" htmlType="submit" >注册</Button>
+                                        <FormItem wrapperCol={{ span: 5, offset: 5 }}>
+                                            <Button type="primary" htmlType="submit" >注册</Button>
+                                        </FormItem>
                                     </Form>
                                 </TabPane>
                             </Tabs>

@@ -1,8 +1,5 @@
 import React from "react";
 import {
-    Row,
-    Col,
-    Menu,
     Button,
     Modal,
     Tabs,
@@ -76,6 +73,8 @@ export default class MobileHeader extends React.Component {
                         <TabPane tab="登录" key="1">
                             <Form
                                 layout="horizontal"
+                                labelCol={{ span: 4 }}
+                                wrapperCol={{ span: 14 }}
                                 onFinish={this.handleSubmit.bind(this)}>
                                 <FormItem label="账户" name="r_userName">
                                     <Input placeholder="请输入您的账户" />
